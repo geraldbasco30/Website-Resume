@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Online resume of Your Name — role, projects, experience, skills, and contact." />
+  <title>Your Name — Resume</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar" aria-label="Site header">
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <strong>Your Name</strong>
+          <span>Role / Title • City, Country</span>
+        </div>
+      </a>
+
+      <!-- NAV + MOBILE MENU BUTTON -->
+      <div class="nav-wrap">
+        <button class="icon-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <!-- Dropdown nav -->
+        <nav class="nav" id="siteNav" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="actions">
+        <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">🌗 Theme</button>
+        <a class="btn primary" href="#contact" aria-label="Jump to contact">Hire / Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Backdrop for dropdown -->
+  <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
+
+  <main class="wrap" id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Intro">
+      <div class="card hero-main">
+        <div class="kicker">Available for opportunities • Open to remote</div>
+        <h1>Your Name</h1>
+        <p class="subtitle">
+          Web & Mobile Developer focused on clean UI, Flutter apps, and Python automation.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="mailto:you@email.com?subject=Opportunity%20for%20Your%20Name">Email me</a>
+          <a class="btn" href="https://linkedin.com/in/yourname" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="#projects">View projects</a>
+        </div>
+
+        <div class="meta" aria-label="Quick facts">
+          <span><b>Location:</b> Manila, PH</span><span class="dot">•</span>
+          <span><b>Email:</b> you@email.com</span><span class="dot">•</span>
+          <span><b>Focus:</b> Flutter / Web / Python</span>
+        </div>
+      </div>
+
+      <aside class="card hero-side" aria-label="Highlights">
+        <div class="mini">
+          <h3>Top strengths</h3>
+          <p>Clean UI • Offline-first • Fast iteration • Shipping mindset</p>
+          <div class="chips">
+            <span class="chip">Flutter</span>
+            <span class="chip">Dart</span>
+            <span class="chip">Python</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">UI/UX</span>
+          </div>
+        </div>
+
+        <div class="mini">
+          <h3>Recent highlight</h3>
+          <p>
+            Built <b>Project Name</b>: one-line achievement with a measurable result.
+            <a href="#projects">See details</a>
+          </p>
+        </div>
+
+        <div class="mini">
+          <h3>Download</h3>
+          <p>
+            Add your PDF resume here: <a href="resume.pdf" target="_blank" rel="noreferrer">resume.pdf</a>
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-label="About">
+      <div class="section-head">
+        <h2>About</h2>
+        <p>What you do + what you’re aiming for</p>
+      </div>
+      <div class="panel">
+        <p class="about-text">
+          I design and build modern, responsive websites and user interfaces. I also develop mobile apps using Dart and Flutter,
+          focusing on smooth UX and reliable performance. I’m highly skilled in Python and enjoy solving real-world problems
+          through automation and efficient systems. I’m looking for opportunities where I can build impactful web or mobile
+          products and grow with a strong team.
+        </p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE + EDUCATION -->
+    <section id="experience" aria-label="Experience">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Recent roles, achievements, and impact</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-role">Job Title</div>
+                  <div class="tl-org">Company • City</div>
+                </div>
+                <div class="tl-time">2024 — Present</div>
+              </div>
+              <ul>
+                <li>Impact bullet with numbers (e.g., “Reduced load time by 35%…”)</li>
+                <li>What you built, for whom, and why it mattered</li>
+                <li>Tools used: Flutter, Dart, Python, UI</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-role">Job Title</div>
+                  <div class="tl-org">Company • City</div>
+                </div>
+                <div class="tl-time">2022 — 2024</div>
+              </div>
+              <ul>
+                <li>Achievement + result</li>
+                <li>Achievement + result</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" id="education">
+          <div class="section-head education-head">
+            <h2 class="education-title">Education</h2>
+            <p class="education-subtitle">Certs, awards, coursework</p>
+          </div>
+
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-role">Degree / Track</div>
+                  <div class="tl-org">School / University</div>
+                </div>
+                <div class="tl-time">2019 — 2023</div>
+              </div>
+              <ul>
+                <li>Relevant: Web dev, mobile dev, databases, UI/UX</li>
+              </ul>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-role">Certification</div>
+                  <div class="tl-org">Issuer</div>
+                </div>
+                <div class="tl-time">2025</div>
+              </div>
+              <ul>
+                <li>Short note about what you learned / proved</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-label="Projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Proof of work (links + short outcomes)</p>
+      </div>
+
+      <div class="projects">
+        <article class="proj">
+          <span class="badge">Featured</span>
+          <h3>Project Name</h3>
+          <p>One sentence: what it is, who it helps, and the standout feature.</p>
+          <div class="chips" aria-label="Project tech">
+            <span class="chip">Flutter</span><span class="chip">Hive</span><span class="chip">Notifications</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/yourname/project" target="_blank" rel="noreferrer">Code</a>
+            <a href="https://your-demo-link.com" target="_blank" rel="noreferrer">Live</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <span class="badge">Mobile</span>
+          <h3>Project Name</h3>
+          <p>One sentence: problem → solution → result.</p>
+          <div class="chips">
+            <span class="chip">Dart</span><span class="chip">UI</span><span class="chip">Offline</span>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Case study</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <span class="badge">Web</span>
+          <h3>Project Name</h3>
+          <p>One sentence: what you built + why it’s impressive.</p>
+          <div class="chips">
+            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-label="Skills">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>Tools and strengths you can prove</p>
+      </div>
+
+      <div class="panel">
+        <div class="skills" aria-label="Skill list">
+          <span class="skill">Flutter</span>
+          <span class="skill">Dart</span>
+          <span class="skill">Python</span>
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">Git</span>
+          <span class="skill">UI/UX</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-label="Contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Make it easy to reach you</p>
+      </div>
+
+      <div class="contact">
+        <div class="panel">
+          <form id="contactForm">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" autocomplete="name" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="name@email.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about the role / project..." required></textarea>
+            </div>
+
+            <button class="btn primary" type="submit">Send (opens email)</button>
+            <p class="contact-note">
+              This uses <b>mailto</b> (no backend needed). If you want a real form endpoint, tell me what host you’ll use.
+            </p>
+          </form>
+        </div>
+
+        <aside class="panel">
+          <h3 class="links-title">Links</h3>
+          <p class="links-desc">Replace these with your real socials.</p>
+
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-role">Email</div>
+                  <div class="tl-org"><a href="mailto:you@email.com">you@email.com</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-role">GitHub</div>
+                  <div class="tl-org"><a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-top">
+                <div>
+                  <div class="tl-role">LinkedIn</div>
+                  <div class="tl-org"><a href="https://linkedin.com/in/yourname" target="_blank" rel="noreferrer">linkedin.com/in/yourname</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Your Name</div>
+      <div>Built as a simple one-page resume • Fast • Mobile-friendly</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
